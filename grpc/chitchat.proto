@@ -1,0 +1,37 @@
+
+syntax = "proto3";
+
+package chitchat;
+
+option go_package = "chit-chat/grpc;chatpb";
+
+service ChitChat {
+  rpc Chat(stream ClientRequest) returns (stream ServerEvent);
+}
+
+message ClientRequest {
+  oneof request {
+    JoinRequest join = 1;
+    PublishRequest publish = 2;
+    LeaveRequest leave = 3;
+  }
+}
+
+message JoinRequest {
+  string client_id = 1;
+}
+
+message PublishRequest {
+  string content = 1;
+}
+
+message LeaveRequest {
+  string client_id = 1;
+}
+
+message ServerEvent {
+  string content = 1;
+  uint64 logical_timestamp = 2;
+  string event_type = 3;
+  string client_id = 4;
+}

@@ -1,0 +1,51 @@
+2026/10/25 15:44:38.492721 component=Server event=broadcast type=join client_id="X" logical_timestamp=1 content="Participant X joined Chit Chat at logical time 1"
+2026/10/25 15:44:38.492742 component=Server event=message_enqueued recipient_id="X" sender_id="X" logical_timestamp=1
+2026/10/25 15:44:38.492752 component=Server event=client_connected client_id="X"
+2026/10/25 15:44:38.492948 component=Server event=message_sent recipient_id="X" sender_id="X" logical_timestamp=1
+2026/10/25 15:44:42.685625 component=Server event=broadcast type=join client_id="Y" logical_timestamp=2 content="Participant Y joined Chit Chat at logical time 2"
+2026/10/25 15:44:42.685644 component=Server event=message_enqueued recipient_id="X" sender_id="Y" logical_timestamp=2
+2026/10/25 15:44:42.685646 component=Server event=message_enqueued recipient_id="Y" sender_id="Y" logical_timestamp=2
+2026/10/25 15:44:42.685647 component=Server event=client_connected client_id="Y"
+2026/10/25 15:44:42.685656 component=Server event=message_sent recipient_id="X" sender_id="Y" logical_timestamp=2
+2026/10/25 15:44:42.685663 component=Server event=message_sent recipient_id="Y" sender_id="Y" logical_timestamp=2
+2026/10/25 15:44:47.021711 component=Server event=broadcast type=join client_id="Z" logical_timestamp=3 content="Participant Z joined Chit Chat at logical time 3"
+2026/10/25 15:44:47.021735 component=Server event=message_enqueued recipient_id="X" sender_id="Z" logical_timestamp=3
+2026/10/25 15:44:47.021814 component=Server event=message_enqueued recipient_id="Y" sender_id="Z" logical_timestamp=3
+2026/10/25 15:44:47.021820 component=Server event=message_enqueued recipient_id="Z" sender_id="Z" logical_timestamp=3
+2026/10/25 15:44:47.021821 component=Server event=client_connected client_id="Z"
+2026/10/25 15:44:47.021828 component=Server event=message_sent recipient_id="Y" sender_id="Z" logical_timestamp=3
+2026/10/25 15:44:47.021835 component=Server event=message_sent recipient_id="Z" sender_id="Z" logical_timestamp=3
+2026/10/25 15:44:47.021816 component=Server event=message_sent recipient_id="X" sender_id="Z" logical_timestamp=3
+2026/10/25 15:44:57.233302 component=Server event=broadcast type=chat client_id="X" logical_timestamp=4 content="Hello everyone!"
+2026/10/25 15:44:57.233352 component=Server event=message_enqueued recipient_id="Z" sender_id="X" logical_timestamp=4
+2026/10/25 15:44:57.233360 component=Server event=message_enqueued recipient_id="X" sender_id="X" logical_timestamp=4
+2026/10/25 15:44:57.233366 component=Server event=message_enqueued recipient_id="Y" sender_id="X" logical_timestamp=4
+2026/10/25 15:44:57.233437 component=Server event=message_sent recipient_id="Y" sender_id="X" logical_timestamp=4
+2026/10/25 15:44:57.233435 component=Server event=message_sent recipient_id="X" sender_id="X" logical_timestamp=4
+2026/10/25 15:44:57.233475 component=Server event=message_sent recipient_id="Z" sender_id="X" logical_timestamp=4
+2026/10/25 15:45:03.827206 component=Server event=broadcast type=chat client_id="Y" logical_timestamp=5 content="Hi X!"
+2026/10/25 15:45:03.827231 component=Server event=message_enqueued recipient_id="X" sender_id="Y" logical_timestamp=5
+2026/10/25 15:45:03.827233 component=Server event=message_enqueued recipient_id="Y" sender_id="Y" logical_timestamp=5
+2026/10/25 15:45:03.827235 component=Server event=message_enqueued recipient_id="Z" sender_id="Y" logical_timestamp=5
+2026/10/25 15:45:03.827283 component=Server event=message_sent recipient_id="X" sender_id="Y" logical_timestamp=5
+2026/10/25 15:45:03.827307 component=Server event=message_sent recipient_id="Z" sender_id="Y" logical_timestamp=5
+2026/10/25 15:45:03.827304 component=Server event=message_sent recipient_id="Y" sender_id="Y" logical_timestamp=5
+2026/10/25 15:45:11.745847 component=Server event=broadcast type=chat client_id="Z" logical_timestamp=6 content="Hello X and Y!"
+2026/10/25 15:45:11.745913 component=Server event=message_enqueued recipient_id="X" sender_id="Z" logical_timestamp=6
+2026/10/25 15:45:11.745921 component=Server event=message_enqueued recipient_id="Y" sender_id="Z" logical_timestamp=6
+2026/10/25 15:45:11.745923 component=Server event=message_enqueued recipient_id="Z" sender_id="Z" logical_timestamp=6
+2026/10/25 15:45:11.745991 component=Server event=message_sent recipient_id="Z" sender_id="Z" logical_timestamp=6
+2026/10/25 15:45:11.746063 component=Server event=message_sent recipient_id="Y" sender_id="Z" logical_timestamp=6
+2026/10/25 15:45:11.746054 component=Server event=message_sent recipient_id="X" sender_id="Z" logical_timestamp=6
+2026/10/25 15:45:20.879912 component=Server event=broadcast type=leave client_id="X" logical_timestamp=7 content="Participant X left Chit Chat at logical time 7"
+2026/10/25 15:45:20.879927 component=Server event=message_enqueued recipient_id="Y" sender_id="X" logical_timestamp=7
+2026/10/25 15:45:20.879929 component=Server event=message_enqueued recipient_id="Z" sender_id="X" logical_timestamp=7
+2026/10/25 15:45:20.879931 component=Server event=client_left client_id="X"
+2026/10/25 15:45:20.879941 component=Server event=message_sent recipient_id="Z" sender_id="X" logical_timestamp=7
+2026/10/25 15:45:20.879949 component=Server event=message_sent recipient_id="Y" sender_id="X" logical_timestamp=7
+2026/10/25 15:45:25.821900 component=Server event=broadcast type=leave client_id="Y" logical_timestamp=8 content="Participant Y left Chit Chat at logical time 8"
+2026/10/25 15:45:25.821923 component=Server event=message_enqueued recipient_id="Z" sender_id="Y" logical_timestamp=8
+2026/10/25 15:45:25.821926 component=Server event=client_left client_id="Y"
+2026/10/25 15:45:25.821957 component=Server event=message_sent recipient_id="Z" sender_id="Y" logical_timestamp=8
+2026/10/25 15:45:30.235227 component=Server event=broadcast type=leave client_id="Z" logical_timestamp=9 content="Participant Z left Chit Chat at logical time 9"
+2026/10/25 15:45:30.235239 component=Server event=client_left client_id="Z"
